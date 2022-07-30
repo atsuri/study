@@ -5,7 +5,7 @@
 
 const Sequelize = require('sequelize');
 
-let DB_INFO = "postgres://last:ne201094@localhost:5432/last";
+let DB_INFO = "postgres://ユーザ名:パスワード@localhost:5432/ユーザ名";
 let pg_option = {};
 let i = 1;
 

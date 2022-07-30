@@ -3,12 +3,12 @@ version: '3'
 services:
   postgres:
     image: postgres:12
-    container_name: last_db
+    container_name: コンテナ名
     restart: always
     environment:
       TZ: "Asia/Tokyo"
-      POSTGRES_USER: last
-      POSTGRES_PASSWORD: ne201094
+      POSTGRES_USER: ユーザ名
+      POSTGRES_PASSWORD: パスワード
       POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
     ports:
       - 5432:5432
@@ -20,8 +20,8 @@ services:
     container_name: pgadmin
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: ne201094@senshu-u.jp
-      PGADMIN_DEFAULT_PASSWORD: ne201094
+      PGADMIN_DEFAULT_EMAIL: メールアドレス
+      PGADMIN_DEFAULT_PASSWORD: パスワード
     ports:
       - 8083:80
     volumes:
